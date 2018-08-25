@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="survey-form.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <h1 id="title">SURVEY FORM</h1>
+            <p id="description">Demographic Survey</p>
+        </header>
+
+        <main id="main-content">
+            <form id="survey-form">
+                <div id="name-div">
+                    <label for="name" id="name-label" class="label-top">Name <span class="asterisk">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Your name here please" required>
+                </div>
+                <div id="email-div">
+                    <label for="email" id="email-label" class="label-top">Email <span class="asterisk">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email address" required>
+                </div>
+                <div id="number-div">
+                    <label for="number" id="number-label" class="label-top">Age <span class="asterisk">*</span></label>
+                    <input type="number" id="number" name="number" min="12" max="120" step="1" placeholder="How old are you?" required>
+                </div>
+                <div id="work-status">
+                    <label for="work" class="label-top">Job Title</label>
+                    <select id="dropdown" name="work" class="drop">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="ft-job">Full-time Job</option>
+                        <option value="ft-learner">Full-time Learner</option>
+                        <option value="homemaker">Homemaker</option>
+                        <option value="not-say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div id="when-to-buy">
+                    <label for="radio-choice" class="label-std">How likely are you to buy a new phone in the next 6 months?</label>
+                    <ul id="radio-list">
+                        <li class="radio"><label><input type="radio" value="1" name="radio-choice">Definitely</label></li>
+                        <li class="radio"><label><input type="radio" value="2" name="radio-choice">Probably</label></li>
+                        <li class="radio"><label><input type="radio" value="3" name="radio-choice">Less likely</label></li>
+                        <li class="radio"><label><input type="radio" value="4" name="radio-choice">Not sure</label></li>
+                    </ul>
+                </div>
+                <div id="reason">
+                    <label for="reason" class="label-top">What influences you MOST in buying a new phone?</label>
+                    <select id="reason-to-buy" name="reason" class="drop">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="price">Price</option>
+                        <option value="screen-size">Screen size</option>
+                        <option value="memory">Memory capacity</option>
+                        <option value="brand">Brand</option>
+                    </select>
+                </div>
+                <div id="brands">
+                    <label for="checkbox" class="label-std">Which brand would you consider purchasing? (Check all that apply)</label>
+                    <ul id="brand-name">
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="1">Samsung</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="2">Apple</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="3">Huawei</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="4">XiaoMi</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="5">HTC</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="6">Nokia</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="7">Sony</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="8">Motorola</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="9">L.G.</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="10">OnePlus</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="checkbox" value="11">Other</label></li>
+                    </ul>
+                </div>
+                <div id="thank-you">
+                    <p>Thank you for taking our survey!</p>
+                </div>
+                <div id="comment">
+                    <label for="comment-box" class="label-top">Any comment or suggestions?</label>
+                    <textarea id="comment-box" name="comment-box" placeholder="Type your message here please"></textarea>
+                </div>
+                <div id="button-holder">
+                    <button type="submit" id="submit">Submit!</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div id="made-by">
+                <p>Made by <a id="name-link" href="https://github.com/nurainabdillah" target="_blank">Ayie Nurain</a> with <a id="codepen" href="https://codepen.io/" target="_blank">CodePen</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
